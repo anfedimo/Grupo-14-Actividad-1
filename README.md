@@ -74,15 +74,3 @@ chat_mediator/
 ```bash
 python main.py
 ```
-
-4. Desde la raíz del proyecto, ejecuta Coverage:
-
-```bash
-coverage run -m pytest coverage report
-```
-
-5. Desde la raíz del proyecto, Ver el reporte del Coverage desde la consola:
-
-```bash
-coverage report
-```
