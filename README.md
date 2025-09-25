@@ -44,24 +44,24 @@ El diseño sigue UML, orientado a objetos y fiel a la implementación real:
 
 ![Diagrama de Clases](assets/diagram.png)
 
-> El archivo fuente `.drawio` también se incluye para edición futura si es requerido.
 
 ---
 
 ## 🗂️ Estructura del Proyecto
 
+```text
 chat_mediator/
-│
-├── models/
-│ ├── init.py
-│ ├── chatroom.py
-│ └── user.py
-│
 ├── assets/
-│ └── diagram.png
-│
+│   └── diagram.png
+├── models/
+│   ├── __init__.py
+│   ├── chatroom.py
+│   └── user.py
+├── tests/
+│   └── test_chat.py
 ├── main.py
 └── README.md
+```
 
 ---
 
