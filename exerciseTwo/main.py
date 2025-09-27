@@ -1,16 +1,19 @@
-from models.chatroom import ChatRoom
-from models.user import User
+from models.plataforma import VisualizacionWeb, VisualizacionMovil, VisualizacionEscritorio
+from models.notificacion import NotificacionMensaje, NotificacionAlerta, NotificacionAdvertencia, NotificacionConfirmacion
+
+
+def imprimir_notificacion(notificacion) -> None:
+    print(notificacion.mostrar())
+
 
 if __name__ == "__main__":
-    chat = ChatRoom()
-    alice = User("Alice")
-    bob = User("Bob")
-    carol = User("Carol")
+    plataforma_web = VisualizacionWeb()
+    imprimir_notificacion(NotificacionMensaje(plataforma_web))
+    imprimir_notificacion(NotificacionAlerta(plataforma_web))
 
-    chat.register(alice)
-    chat.register(bob)
-    chat.register(carol)
+    plataforma_movil = VisualizacionMovil()
+    imprimir_notificacion(NotificacionAdvertencia(plataforma_movil))
+    imprimir_notificacion(NotificacionConfirmacion(plataforma_movil))
 
-    alice.send("Hola a todos!")
-    bob.send("Hola Alice!")
-    carol.send("¿Qué tal?")
+    plataforma_escritorio = VisualizacionEscritorio()
+    imprimir_notificacion(NotificacionMensaje(plataforma_escritorio))
