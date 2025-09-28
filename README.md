@@ -37,44 +37,52 @@
 2. Clona el repositorio o descarga el código.
 3. Navega a la carpeta del ejercicio deseado y ejecuta su `main.py`
 
-## Ejercicio1 – (tipo de patron)
+## Ejercicio1 – (Patrón Builder)
 
 ### 📚 Descripción General
 
-[Descripción del ejercicio 1 aquí. Explica el propósito y objetivos.]
+Este ejercicio implementa el **patrón de diseño Builder** aplicado al dominio de automóviles.  
+El objetivo es construir objetos complejos (Automóviles) paso a paso, separando la representación final del proceso de construcción.
 
 ---
 
 ### 🏛️ Arquitectura y Patrón de Diseño
 
-- **Tipo de patrón:** [Tipo, ej. Creacional]
-- **Patrón seleccionado:** **Singleton**
+- **Tipo de patrón:** Creacional  
+- **Patrón seleccionado:** **Builder**  
 - **Justificación profesional:**  
-  [Explica por qué se eligió este patrón, beneficios, etc.]
+  El patrón Builder fue elegido porque quita la responsabilidad del constructor para crear el objeto ademas de facilitar la comprension cognitiva de este proceso. Ademas, independiza cada propiedad y hace que se pueda trabajar el modelo desde diferentes lugares.
 
 ---
 
-### 💡 Beneficios de aplicar el (tipo de patron)
+### 💡 Beneficios de aplicar el Patrón Builder
 
-- [Lista de beneficios aquí]
-- [Otro beneficio]
-- [Etc.]
+- Permite construir objetos paso a paso.  
+- Flexibilidad para generar distintas variantes de un mismo producto.  
+- reduccion de complegidad cognitiva.  
+- Centralización de validaciones en el proceso de construcción.  
+- Separación de responsabilidades entre el modelo y el constructor.  
 
 ---
 
 ### 🛠️ Buenas prácticas aplicadas
 
-- [Lista de buenas prácticas]
-- [Otra práctica]
-- [Etc.]
+- Uso de `@dataclass` para simplificar la definición del modelo.  
+- Organización modular del proyecto (`domain`, `builders`, `directors`, `exceptions`).  
+- Encapsulación de atributos internos en el Builder.  
+- Uso de una excepción dedicada para configuraciones inválidas.  
+- Aplicación del principio de responsabilidad única.
+- Uso de Enums para tipado de datos  
+
 
 ---
 
 ### 📝 Diagrama de Clases
 
-[Descripción del diagrama]
+AutomovilDirector utiliza un builder para orquestar la construccion de automoviles y el builder construye el producto final.
 
-![Diagrama de Clases Ejercicio1](assets/diagram_ej1.png)
+
+![Diagrama de Clases Ejercicio2](assets/UML_1.png)
 
 ---
 
