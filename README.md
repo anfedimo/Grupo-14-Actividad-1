@@ -1,5 +1,13 @@
 # Patrones de arquitectura
 
+## Integrantes
+
+- Andres Fernando Diaz Moreno
+- Wilson Andres Jaime Rodriguez
+- Jhoan Sebastian Castillo Usuriaga
+- Sadane Geronimo Miguel Santiago Acevedo Virgues
+- Andres Camilo Lopez Castro
+
 ## Proyecto general
 
 ### 🗂️ Estructura del Proyecto
