@@ -1,6 +1,6 @@
 # Patrones de arquitectura
 
-## Integrantes
+## :octocat: Integrantes
 
 - Andres Fernando Diaz Moreno
 - Wilson Andres Jaime Rodriguez
